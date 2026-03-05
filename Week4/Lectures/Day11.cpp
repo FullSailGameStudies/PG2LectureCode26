@@ -80,7 +80,7 @@ void Day11::PartB()
 
 					while (SDL_PollEvent(&e) != 0)
 					{
-						if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+						if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 						{
 							quit = true;
 						}
@@ -89,11 +89,13 @@ void Day11::PartB()
 						{
 							switch (e.key.keysym.sym)
 							{
+							case SDLK_a:
 							case SDLK_LEFT:
 							{
 								walkingLeft = true;
 								break;
 							}
+							case SDLK_d:
 							case SDLK_RIGHT:
 							{
 								walkingRight = true;
@@ -105,16 +107,19 @@ void Day11::PartB()
 						{
 							switch (e.key.keysym.sym)
 							{
+							case SDLK_a:
 							case SDLK_LEFT:
 							{
 								walkingLeft = false;
 								break;
 							}
+							case SDLK_d:
 							case SDLK_RIGHT:
 							{
 								walkingRight = false;
 								break;
 							}
+							case SDLK_KP_1:
 							case SDLK_1: //save robot
 							{
 								// serialize the Player
@@ -122,6 +127,7 @@ void Day11::PartB()
 								robbie.Info();
 								break;
 							}
+							case SDLK_KP_2:
 							case SDLK_2: //load robot
 							{
 								// deserialize the Player

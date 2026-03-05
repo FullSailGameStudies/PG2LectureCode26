@@ -71,6 +71,24 @@ for (int i = nums.size() - 1; i >= 0; --i) {
 }
 ```
 
+## 🔹 Alternative: for loop Iteration
+
+If you're removing elements based on **index**, make sure to only increment the for loop variable when NOT erasing.
+
+```cpp
+for (int i = 0;i < nums.size(); ) //NOTE: no i++ here
+{
+    if (nums[i] % 2 == 0) {
+        nums.erase(nums.begin() + i);
+    }
+    else {
+        i++; //only increment i when NOT erasing
+    }
+}
+```
+
+---
+
 ### ✅ Why This Works:
 - Erasing from the end avoids invalidating earlier indices.
 - No iterator invalidation occurs for elements before the erased one.

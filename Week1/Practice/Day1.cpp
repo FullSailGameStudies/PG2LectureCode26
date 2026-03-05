@@ -49,7 +49,7 @@ void Day1::PartA_1_1()
 
 			Target target{ 7, 0, 0xD9, 0xD6, 0x02 };
 
-			player.SetMap(map.mapData);
+			player.SetMap(map.mapData, 10, 1);
 
 			bool quit = false;
 			SDL_Event e;
@@ -137,7 +137,7 @@ void Day1::PartA_1_2()
 
 			Target target{ 0, 5, 0xD9, 0xD6, 0x02 };
 
-			player.SetMap(map.mapData);
+			player.SetMap(map.mapData, 1, 10);
 
 			bool quit = false;
 			SDL_Event e;
@@ -225,7 +225,7 @@ void Day1::PartA_1_3()
 			}
 			oreTexture.BlendMode(SDL_BLENDMODE_NONE);
 
-			player.SetMap(map.mapData);
+			player.SetMap(map.mapData, 10, 10);
 
 			bool quit = false;
 			SDL_Event e;
@@ -347,7 +347,7 @@ void Day1::PartA_2()
 			}
 			oreTexture.BlendMode(SDL_BLENDMODE_NONE);
 
-			player.SetMap(map.mapData);
+			player.SetMap(map.mapData, 10, 10);
 
 			bool quit = false;
 			SDL_Event e;

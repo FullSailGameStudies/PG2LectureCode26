@@ -6,7 +6,6 @@
   - [❓ Q: How do I make a rectangle with a point and width and height?](#-q-how-do-i-make-a-rectangle-with-a-point-and-width-and-height)
   - [❓ Q: How do I get my rectangle to fit within the window?](#-q-how-do-i-get-my-rectangle-to-fit-within-the-window)
   - [❓ Q: How do I make my circle fit within the window?](#-q-how-do-i-make-my-circle-fit-within-the-window)
-  - [❓ Q: Why am I'm getting a build error when trying to push back the unique_ptr to the vector?](#-q-why-am-im-getting-a-build-error-when-trying-to-push-back-the-unique_ptr-to-the-vector)
 <!--/TOC-->
 ## ❓ Q: Do you have any tips for lab 3?
 
@@ -144,28 +143,5 @@ You should pick a radius that will make the circle fit within the window. Here's
 1. get your center
 2. figure out the smallest possible MAX radius. That would be determined by the smallest distance the point is to the edges of the window.
 3. use that MAX radius with rand
-
----
-
-## ❓ Q: Why am I'm getting a build error when trying to push back the unique_ptr to the vector?
-
-### 💡 A: Use the std::move method
-You might be getting an error like this:
-
-```cpp
-error C2665: 'std::vector<std::unique_ptr<Shape,std::default_delete<Shape>>,std::allocator<std::unique_ptr<Shape,std::default_delete<Shape>>>>::push_back': no overloaded function could convert all the argument types
-```
-
-You are likely storing the unique_ptr in a variable in main then trying to push_back the variable to the vector.
-
-#### To Fix:
-inside the push_back, call std::move on the variable.
-```cpp
-std::unique_ptr<someType> myPtr = GetSomeUniquePtr();
-
-std::vector<someType> storage;
-storage.push_back(std::move(myPtr));
-
-```
 
 ---

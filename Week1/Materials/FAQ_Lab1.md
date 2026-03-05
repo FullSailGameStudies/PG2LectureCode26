@@ -2,7 +2,6 @@
 <!--TOC-->
   - [❓ Q: Do you have any tips for lab 1?](#-q-do-you-have-any-tips-for-lab-1)
   - [❓ Q: My method is undefined even though it is in the `.cpp` file. Why?!](#-q-my-method-is-undefined-even-though-it-is-in-the-.cpp-file.-why)
-  - [❓ Q: How do I print the details of a Hero?](#-q-how-do-i-print-the-details-of-a-hero)
   - [❓ Q: How do I compare strings using _stricmp?](#-q-how-do-i-compare-strings-using-_stricmp)
   - [❓ Q: I'm getting a build error that says `'binary <<': no operator found...`. What is causing this?](#-q-im-getting-a-build-error-that-says-binary-no-operator-found....-what-is-causing-this)
   - [❓ Q: How do I properly use `const`?](#-q-how-do-i-properly-use-const)
@@ -12,7 +11,7 @@
 ### 💡 A: Of course! here they are...
 
 #### 🧠 **Start by Reading the Code You're Given**
-* **Check out** `Hero.h`, `HeroesDB.h`, and `HeroesDB.cpp` before you start coding.
+* **Check out** header files before you start coding.
 * These files often include helpful methods and examples that will save you time and confusion.
 
 #### 📁 **Understand File Structure (.h vs .cpp)**
@@ -20,7 +19,7 @@
 * `.cpp` files: for **definitions** — the actual code that runs.
   🔁 Keeping these organized makes debugging *way* easier later on.
 
-#### 🧪 **Use `main()` in `HeroesV1.cpp` as a Guide**
+#### 🧪 **Use the examples as a Guide**
 * Garrett included examples of how to do some tasks — use them!
 * Don’t try to “guess” how to start — build from working examples.
 
@@ -88,34 +87,6 @@ void MyClass::doSomething() {
 ```
 
 > ❗ Without the `MyClass::` prefix, the compiler doesn't know which class the method belongs to, and it will throw an "undefined" error.
-
----
-
-## ❓ Q: How do I print the details of a Hero?
-
-### 💡 A: See the example code in `HeroesV1.cpp`
-There is some example code in HeroesV1.cpp file about...
-
-- how to call methods on the HeroesDB class
-- how to use the Console::Write and WriteLine methods to print.
-- how to access the parts of a Hero object
-
-```cpp
-Hero theBest = heroDB.GetBestHero(); //how to call a non-static method
-Console::Write("The best hero is "); //how to call a static method
-
-//how to call the Write method and change the foreground color
-Console::Write(theBest.Name(), ConsoleColor::Yellow);
-Console::Write("! (of course).\nThe Id of the hero is ");
-Console::Write(theBest.Id(), ConsoleColor::Green);
-Console::Write(".\nHis combat level is ");
-
-//how to access the members of a Hero object
-//how to print a number using the Console::Write using the std::to_string method
-Console::Write(theBest.Powerstats().Combat, ConsoleColor::Red);
-Console::WriteLine("!");
-Input::PressEnter();
-```
 
 ---
 

@@ -138,7 +138,7 @@ bool Player::HandleEvent(SDL_Event& e, const std::vector<int>& map, int mapSize)
 			Interact(map, mapSize);
 			break;
 		}
-		if (move) Move(map, mapSize);
+		if (move) Move(map, cols_, rows_);
 	}
 	return quit;
 }
@@ -146,28 +146,28 @@ bool Player::HandleEvent(SDL_Event& e, const std::vector<int>& map, int mapSize)
 void Player::MoveUp()
 {
 	yVelocity_ -= maxVelocity_;
-	Move(map_);
+	Move(map_, cols_, rows_);
 	AddUndo("MoveUp");
 }
 
 void Player::MoveDown()
 {
 	yVelocity_ += maxVelocity_;
-	Move(map_);
+	Move(map_, cols_, rows_);
 	AddUndo("MoveDown");
 }
 
 void Player::MoveLeft()
 {
 	xVelocity_ -= maxVelocity_;
-	Move(map_);
+	Move(map_, cols_, rows_);
 	AddUndo("MoveLeft");
 }
 
 void Player::MoveRight()
 {
 	xVelocity_ += maxVelocity_;
-	Move(map_);
+	Move(map_, cols_, rows_);
 	AddUndo("MoveRight");
 }
 
@@ -196,7 +196,7 @@ bool Player::CanMove(Direction direction)
 
 void Player::Interact()
 {
-	Interact(map_, mapSize_);
+	Interact(map_, cols_);
 	AddUndo("Interact");
 }
 
@@ -288,10 +288,10 @@ void Player::StoreItems(Item itemToStore, std::vector<Item>& chest)
 
 bool Player::CanMove(int xPos, int yPos)
 {
-	if (xPos < 0 || yPos < 0 || xPos > mapSize_ - 1 || yPos > mapSize_ - 1)
+	if (xPos < 0 || yPos < 0 || xPos > cols_ - 1 || yPos > rows_ - 1)
 		return false;
 
-	int index = yPos * mapSize_ + xPos;
+	int index = yPos * cols_ + xPos;
 	if (map_[index] != 1)
 		return true;
 
@@ -337,6 +337,46 @@ void Player::Move(const std::vector<int>& map, int mapSize)
 	yVelocity_ = 0;
 	//std::this_thread::sleep_for(std::chrono::milliseconds(500));
 }
+void Player::Move(const std::vector<int>& map, int columns, int rows)
+{
+	//Move the player's x position
+	int newXPosition = xPosition_ + xVelocity_;
+
+	//if the new x position is outside of the bounds...
+	if (newXPosition < 0)
+		newXPosition = 0;
+	else if (newXPosition > columns - 1)
+		newXPosition = columns - 1;
+	//else if ((xPosition_ + (width_ * scale_) > engine_->Width()))
+	//	xPosition_ = engine_->Width() - (width_ * scale_);
+
+
+
+	//Move the player's y position
+	int newYPosition = yPosition_ + yVelocity_;
+
+	//if the new y position is outside of the bounds...
+	if (newYPosition < 0)
+		newYPosition = 0;
+	else if (newYPosition > rows - 1)
+		newYPosition = rows - 1;
+	//else if (yPosition_ + (height_ * scale_) > engine_->Height())
+	//	yPosition_ = engine_->Height() - (height_ * scale_);
+
+	int index = newYPosition * columns + newXPosition;
+	if (map[index] != 1)
+	{
+		xPosition_ = newXPosition;
+		yPosition_ = newYPosition;
+
+		Mix_PlayChannel(-1, gSteps[rand() % gSteps.size()], 0);
+	}
+
+	xVelocity_ = 0;
+	yVelocity_ = 0;
+	//std::this_thread::sleep_for(std::chrono::milliseconds(500));
+}
+
 
 void Player::Render()
 {
@@ -400,7 +440,7 @@ void Player::Redo()
 	{
 		MoveUp();
 	}
-	else if(action == "MoveDown")
+	else if (action == "MoveDown")
 	{
 		MoveDown();
 	}

@@ -55,7 +55,7 @@ void Day8::PartB_1()
 		{
 			while (SDL_PollEvent(&e) != 0)
 			{
-				if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+				if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 				{
 					quit = true;
 				}
@@ -63,6 +63,7 @@ void Day8::PartB_1()
 				{
 					switch (e.key.keysym.sym)
 					{
+					case SDLK_KP_1:
 					case SDLK_1:
 					{
 						float scale = 1.0F;
@@ -85,6 +86,7 @@ void Day8::PartB_1()
 						engine.Present();
 						break;
 					}
+					case SDLK_KP_2:
 					case SDLK_2:
 					{
 						float scale = 1.0F;
@@ -107,6 +109,7 @@ void Day8::PartB_1()
 						engine.Present();
 						break;
 					}
+					case SDLK_KP_0:
 					case SDLK_0:
 					{
 						quit = true;

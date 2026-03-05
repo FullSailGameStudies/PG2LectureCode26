@@ -64,7 +64,7 @@ void Day10::PartA_1()
 				{
 					while (SDL_PollEvent(&e) != 0)
 					{
-						if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+						if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 						{
 							quit = true;
 						}
@@ -151,7 +151,7 @@ void Day10::PartA_2()
 
 					while (SDL_PollEvent(&e) != 0)
 					{
-						if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+						if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 						{
 							quit = true;
 						}
@@ -160,11 +160,13 @@ void Day10::PartA_2()
 						{
 							switch (e.key.keysym.sym)
 							{
+							case SDLK_a:
 							case SDLK_LEFT:
 							{
 								walkingLeft = true;
 								break;
 							}
+							case SDLK_d:
 							case SDLK_RIGHT:
 							{
 								walkingRight = true;
@@ -176,16 +178,19 @@ void Day10::PartA_2()
 						{
 							switch (e.key.keysym.sym)
 							{
+							case SDLK_a:
 							case SDLK_LEFT:
 							{
 								walkingLeft = false;
 								break;
 							}
+							case SDLK_d:
 							case SDLK_RIGHT:
 							{
 								walkingRight = false;
 								break;
 							}
+							case SDLK_KP_1:
 							case SDLK_1: //save robot
 							{
 								//
@@ -196,6 +201,7 @@ void Day10::PartA_2()
 								std::cout << "POSITION: " << std::setw(7) << std::right << worldX;
 								break;
 							}
+							case SDLK_KP_2:
 							case SDLK_2: //load robot
 							{
 								//

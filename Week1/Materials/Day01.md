@@ -4,7 +4,7 @@
 
 ### 🧩 part A-1.0: calling methods on the Console class to print messages.
 1. Open `Lectures.cpp`.
-2. Add code before the switch to call Console::Write and Console::WriteLine.
+2. Add code in case 1 of the switch to call Console::Write and Console::WriteLine.
 3. Print several lines. Experiment with changing the colors.
 
 ---
@@ -73,8 +73,8 @@ Ask the user for their age. A minimum age would be 0 and a maximum age would be 
 - Find the comment in the `Day1.cpp` file for Part A-2.2 
 - Add a method called CreateTargets_PartA_2. 
   - The definition should go in the Day1.cpp file.
-  - The method should create a vector of 10 Target objects with random positions and colors.
-    - Use rand() % mapSize and rand() % colorRange to pick the random position and color.
+  - The method should create a vector of 10 Target objects.
+    - Use rand() % mapSize to pick the random position (row and col) for each target.
   - Return the vector.
 
 
@@ -85,7 +85,7 @@ Ask the user for their age. A minimum age would be 0 and a maximum age would be 
 ### 🧩 Part A-2.3: calling the method
 - Find the comment in the `Day1.cpp` file for Part A-2.3 
   - Call CreateTargets_PartA_2 in the PartA_2() method. 
-    - Before the loop call CreateTargets_PartA_2 and store the returned vector into the “targets” variable.
+    - Before the loop call CreateTargets_PartA_2 and store the returned vector into the `targets` variable.
 
 ![Footer Separator](../../Shared/Images/separator01.png)
 

@@ -51,11 +51,11 @@ void Day5::PartB_1()
 		{
 			while (SDL_PollEvent(&e) != 0)
 			{
-				if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+				if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 				{
 					quit = true;
 				}
-				else if (e.type == SDL_KEYUP && e.key.repeat == 0 && e.key.keysym.sym == SDLK_1)
+				else if (e.type == SDL_KEYUP && e.key.repeat == 0 && (e.key.keysym.sym == SDLK_1 || e.key.keysym.sym == SDLK_KP_1))
 				{
 					Map screenMap(engine.Renderer(), 9, 51, 1);
 					engine.ClearScreen(50, 50, 50, 255);
@@ -125,7 +125,7 @@ void Day5::PartB_2(int section)
 		std::map<ColorChannel, std::vector<Light>> groupedColors;
 
 		//
-		// TODO: Part B-2.1 fill the std::map
+		// TODO: (Lecture) Part B-2.1 fill the std::map
 		// 
 
 
@@ -138,7 +138,7 @@ void Day5::PartB_2(int section)
 
 			int column = 0, row = 0, columnRange = 12;
 			//
-			// TODO: Part B-2.2 loop over the std::map
+			// TODO: (Lecture) Part B-2.2 loop over the std::map
 			//
 
 
@@ -155,7 +155,7 @@ void Day5::PartB_2(int section)
 			int column = 0, row = 0, columnRange = 12;
 
 			//
-			// TODO: Part B-3 call std::map's find method
+			// TODO: (Lecture)  Part B-3 call std::map's find method
 			//
 
 			for (auto& [channel, channelLights] : groupedColors)
@@ -176,7 +176,7 @@ void Day5::PartB_2(int section)
 			int column = 0, row = 0, columnRange = 12;
 
 			//
-			// TODO: Part C-1 erasing from a std::map
+			// TODO: (Lecture)  Part C-1 erasing from a std::map
 			//
 
 
@@ -201,7 +201,7 @@ void Day5::PartB_2(int section)
 		{
 			while (SDL_PollEvent(&e) != 0)
 			{
-				if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+				if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 				{
 					quit = true;
 				}

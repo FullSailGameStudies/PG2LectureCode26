@@ -66,7 +66,7 @@ int main(int argc, char* args[])
 			//	Ask the user to enter their name. Print the name.
 			// 
 			//	Open Lectures.cpp.
-			//	Add code before the switch to call Input::GetString.
+			//	Add code here to call Input::GetString.
 			//	Store the result in a string variable.
 			//	Print the name that the user enters.
 			//	Open the Input.h file(look in Misc / Input in Solution Explorer) to see how the GetString is declared.
@@ -80,7 +80,7 @@ int main(int argc, char* args[])
 			//	Ask the user for their age. A minimum age would be 0 and a maximum age would be 120.
 			// 
 			//	Open Lectures.cpp.
-			//	Add code before the switch to call Input::GetInteger.
+			//	Add code here to call Input::GetInteger.
 			//	Store the result in an int variable.
 			//	Print the age that the user enters.
 			//	Open the Input.h file(look in Misc / Input in Solution Explorer) to see how the GetInteger is declared.

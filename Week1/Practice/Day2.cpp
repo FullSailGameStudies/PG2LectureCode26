@@ -9,7 +9,7 @@
 //
 
 //
-// Part B-2.2: Add a method definition for GetLights
+// Part B-2.2: Add a method definition for DrawLights
 //
 
 //

@@ -1,6 +1,6 @@
 #pragma once
 
-enum ColorChannel
+enum class ColorChannel
 {
 	RED, GREEN, BLUE
 };

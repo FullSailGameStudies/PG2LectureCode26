@@ -20,15 +20,17 @@ public:
 	Player(PG2Graphics* engine, float scale = 1, int xPos = 0, int yPos = 0);
 	~Player();
 
-	void SetMap(const std::vector<int>& map, int mapSize = 10)
+	void SetMap(const std::vector<int>& map, int columns, int rows)
 	{
 		map_ = map;
-		mapSize_ = mapSize;
+		cols_ = columns;
+		rows_ = rows;
 	}
 
 	bool HandleEvent(SDL_Event& e, const std::vector<int>& map, int mapSize = 10);
 
 	void Move(const std::vector<int>& map, int mapSize = 10);
+	void Move(const std::vector<int>& map, int columns = 10, int rows = 10);
 	void Render();
 
 	void Undo();
@@ -69,6 +71,7 @@ private:
 
 	std::vector<int> map_;
 	int mapSize_;
+	int cols_, rows_;
 
 	std::vector<std::string> undo_, redo_;
 	std::vector<Item> inventory_;

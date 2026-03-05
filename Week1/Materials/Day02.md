@@ -13,8 +13,12 @@
 1. Open the `Day2.cpp` file
 2. Add the GetLights definition to the Day2.cpp file
    - fill the vector with Target objects.
-   - There should be 48 rows with 48 Target objects per row.
-   - Give each target a random color.
+	- hint: use nested for loops. each loop should loop 48 times.
+	  - the outer loop is for the rows
+	  - the inner loop is for the columns
+	  - create a Target object inside of the inner loop
+		- randomize the color of each target object (use rand() % 255)
+		- be sure to use the for loop variables to initialize the row and col of the target
 
 ### 🧩 Part B-1.3: call the method
 1. Open the `Day2.cpp` file

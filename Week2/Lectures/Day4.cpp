@@ -46,7 +46,7 @@ void Day4::RecursionExample()
 		{
 			while (SDL_PollEvent(&e) != 0)
 			{
-				if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+				if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 				{
 					quit = true;
 				}
@@ -147,7 +147,7 @@ void Day4::PartA_2()
 		{
 			while (SDL_PollEvent(&e) != 0)
 			{
-				if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+				if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 				{
 					quit = true;
 				}
@@ -155,6 +155,7 @@ void Day4::PartA_2()
 				{
 					switch (e.key.keysym.sym)
 					{
+					case SDLK_KP_1:
 					case SDLK_1: //shows the unsorted vector
 					{
 						Map screenMap(engine.Renderer(), 10);
@@ -168,6 +169,7 @@ void Day4::PartA_2()
 						ShowMenu();
 						break;
 					}
+					case SDLK_KP_2:
 					case SDLK_2: //sort the lights
 					{
 						Sorter sorter;
@@ -187,6 +189,7 @@ void Day4::PartA_2()
 						ShowMenu();
 						break;
 					}
+					case SDLK_KP_3:
 					case SDLK_3://exit
 						quit = true;
 						break;

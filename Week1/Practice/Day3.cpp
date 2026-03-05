@@ -50,7 +50,7 @@ void Day3::PartC_1()
 		{
 			while (SDL_PollEvent(&e) != 0)
 			{
-				if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+				if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 				{
 					quit = true;
 				}
@@ -58,19 +58,22 @@ void Day3::PartC_1()
 				{
 					switch (e.key.keysym.sym)
 					{
+					case SDLK_KP_1:
 					case SDLK_1://Reds
 						channel = ColorChannel::RED;
 						break;
+					case SDLK_KP_2:
 					case SDLK_2://Greens
 						channel = ColorChannel::GREEN;
 						break;
+					case SDLK_KP_3:
 					case SDLK_3://Blues
 						channel = ColorChannel::BLUE;
 						break;
+					case SDLK_KP_4:
 					case SDLK_4://all
 						quit = true;
 						break;
-
 					}
 				}
 			}
@@ -137,7 +140,7 @@ void Day3::PartC_2()
 		{
 			while (SDL_PollEvent(&e) != 0)
 			{
-				if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+				if (e.type == SDL_QUIT || (e.key.keysym.sym == SDLK_ESCAPE && e.type == SDL_KEYUP))
 				{
 					quit = true;
 				}
@@ -148,18 +151,22 @@ void Day3::PartC_2()
 					//
 					switch (e.key.keysym.sym)
 					{
+					case SDLK_KP_1:
 					case SDLK_1://noReds
 						break;
+					case SDLK_KP_2:
 					case SDLK_2://noGreens
 						break;
+					case SDLK_KP_3:
 					case SDLK_3://noBlues
 						break;
+					case SDLK_KP_4:
 					case SDLK_4://all
 						break;
+					case SDLK_KP_5:
 					case SDLK_5://exit
 						quit = true;
 						break;
-
 					}
 				}
 			}

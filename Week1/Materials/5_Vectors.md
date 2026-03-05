@@ -64,6 +64,13 @@ v.insert(v.begin() + 1, 15);  // v = {10, 15, 20, 30, 40}
 
 ## 🔹 3. Erasing Items
 
+### `clear()`
+Removes all of the items in a vector.
+
+```cpp
+v.clear();
+```
+
 ### `pop_back()`
 Removes the **last** element.
 

@@ -5,7 +5,7 @@
 
 ### 🧩 Part B-1.1 Create a BlackjackCard class (Inheritance)
 1. Right-click the Lectures project in the solution explorer and select "Add/Class..."
-2. Enter `BlackjackCard` as the name and press enter to create the class. Enter `Card` as the base class.
+2. Enter `BlackjackCard` as the name and enter `Card` as the base class. Then press enter to create the class.
 3. Add a `constructor` that takes 2 string parameters used to initialize the suit and face.
      - call the Card's constructor
 
@@ -89,7 +89,7 @@ Here are the lecture Practices...
 Here are the lecture quizzes...
 - [Day 7](https://forms.office.com/r/s02tg66qFm)
 - [Day 8](https://forms.office.com/r/0bGwGBWENi)
-- [Day 9](https://forms.office.com/r/BQFdNAsBB0)
+- [Day 9](https://forms.office.com/r/Yc5p0bEgB8)
 
 ---
 
@@ -104,4 +104,7 @@ Here are the topics for the week...
 - [Inheritance](./5_Inheritance.md)
 - [Polymorphism](./6_Polymorphism.md)
 - [Pointers](./7_Pointers.md)
-
+- [Destructors](./9_Destructors.md)
+- [Upcasting](./7_Upcasting.md)
+- [Misc. Concepts](./8_Misc.md)
+- [4 Pillars of OOP](./1_FourPillars.md)
