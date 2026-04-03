@@ -2,9 +2,9 @@
 <!--TOC-->
   - [🔹 Declaration vs. Definition](#-declaration-vs.-definition)
     - [**Declaration**](#declaration)
-      - [**Header File: `Rectangle.h`**](#header-file-rectangle.h)
+      - [**Header File: `Rectangle.h`**](#header-file-rectangleh)
     - [**Definition**](#definition)
-      - [**Source File: `Rectangle.cpp`**](#source-file-rectangle.cpp)
+      - [**Source File: `Rectangle.cpp`**](#source-file-rectanglecpp)
       - [🔍 Why Use the Class Scope (`ClassName::`)?](#-why-use-the-class-scope-classname)
   - [✅ Best Practices](#-best-practices)
   - [🎯 Quiz!](#-quiz)

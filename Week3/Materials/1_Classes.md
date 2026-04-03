@@ -3,9 +3,9 @@
   - [🧠 What is a Class?](#-what-is-a-class)
   - [🧱 Syntax of a Class](#-syntax-of-a-class)
   - [🔐 Access Modifiers in C++](#-access-modifiers-in-c)
-    - [1. `private`](#1.-private)
-    - [2. `public`](#2.-public)
-    - [3. `protected`](#3.-protected)
+    - [1. `private`](#1-private)
+    - [2. `public`](#2-public)
+    - [3. `protected`](#3-protected)
   - [🧪 Example: A Simple `Car` Class](#-example-a-simple-car-class)
   - [✅ Summary Table](#-summary-table)
 <!--/TOC-->

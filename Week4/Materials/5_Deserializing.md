@@ -3,10 +3,10 @@
   - [🧾 What is Deserialization?](#-what-is-deserialization)
   - [📄 CSV Format Overview](#-csv-format-overview)
   - [🧱 Deserializing into a Class](#-deserializing-into-a-class)
-    - [1. Define the Class](#1.-define-the-class)
-    - [2. Read and Parse the CSV File](#2.-read-and-parse-the-csv-file)
-    - [3. Use the Deserialized Data](#3.-use-the-deserialized-data)
-  - [🛠️ Notes and Best Practices](#-notes-and-best-practices)
+    - [1. Define the Class](#1-define-the-class)
+    - [2. Read and Parse the CSV File](#2-read-and-parse-the-csv-file)
+    - [3. Use the Deserialized Data](#3-use-the-deserialized-data)
+  - [🛠️ Notes and Best Practices](#%EF%B8%8F-notes-and-best-practices)
   - [🎯 Quiz!](#-quiz)
 <!--/TOC-->
 

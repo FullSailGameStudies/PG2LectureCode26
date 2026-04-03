@@ -1,11 +1,11 @@
 ﻿# 📘 Const
 <!--TOC-->
   - [**Basic Rules of `const` in C++**](#basic-rules-of-const-in-c)
-    - [1. **Constant Variables**](#1.-constant-variables)
-    - [2. **Function Parameters (Const References)**](#2.-function-parameters-const-references)
-    - [3. **Const Member Functions**](#3.-const-member-functions)
-    - [4. **Const Objects**](#4.-const-objects)
-    - [5. **Const in Function Return Types**](#5.-const-in-function-return-types)
+    - [1. **Constant Variables**](#1-constant-variables)
+    - [2. **Function Parameters (Const References)**](#2-function-parameters-const-references)
+    - [3. **Const Member Functions**](#3-const-member-functions)
+    - [4. **Const Objects**](#4-const-objects)
+    - [5. **Const in Function Return Types**](#5-const-in-function-return-types)
   - [🎯 Quiz!](#-quiz)
 <!--/TOC-->
 

@@ -1,10 +1,10 @@
 ﻿# 📘 C++ `struct` vs `class` 
 <!--TOC-->
-  - [🔹 What is a `struct`?](#-what-is-a-struct)
+  - [What is a `struct`?](#-what-is-a-struct)
     - [✅ Characteristics of `struct`:](#-characteristics-of-struct)
-  - [🔸 What is a `class`?](#-what-is-a-class)
+  - [What is a `class`?](#-what-is-a-class)
     - [✅ Characteristics of `class`:](#-characteristics-of-class)
-  - [⚖️ Key Differences](#-key-differences)
+  - [⚖️ Key Differences](#%EF%B8%8F-key-differences)
   - [🧠 When to Use What?](#-when-to-use-what)
   - [🧪 Fun Fact](#-fun-fact)
   - [🎯 Quiz!](#-quiz)

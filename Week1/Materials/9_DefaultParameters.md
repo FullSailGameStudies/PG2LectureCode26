@@ -1,7 +1,7 @@
 ﻿# 📘 Default Parameters in C++  
 <!--TOC-->
-  - [🔹 Syntax of Default Parameters](#-syntax-of-default-parameters)
-  - [🔸 Default Parameters in Member Functions](#-default-parameters-in-member-functions)
+  - [Syntax of Default Parameters](#-syntax-of-default-parameters)
+  - [Default Parameters in Member Functions](#-default-parameters-in-member-functions)
     - [✅ Correct Usage](#-correct-usage)
     - [❌ Incorrect Usage](#-incorrect-usage)
   - [🧠 Key Rules and Best Practices](#-key-rules-and-best-practices)

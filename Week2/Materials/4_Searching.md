@@ -1,14 +1,14 @@
 ﻿# 📘 Linear Search vs Binary Search
 <!--TOC-->
-  - [🧠 1. Conceptual Overview](#-1.-conceptual-overview)
+  - [🧠 1. Conceptual Overview](#-1-conceptual-overview)
     - [**Linear Search (Sequential Search)**](#linear-search-sequential-search)
     - [**Binary Search**](#binary-search)
-  - [⏱️ 2. Time Complexity](#-2.-time-complexity)
-  - [🧰 3. Use Cases](#-3.-use-cases)
+  - [⏱️ 2. Time Complexity](#%EF%B8%8F-2-time-complexity)
+  - [🧰 3. Use Cases](#-3-use-cases)
     - [Use **Linear Search** when:](#use-linear-search-when)
     - [Use **Binary Search** when:](#use-binary-search-when)
-  - [🧪 4. Example Scenario](#-4.-example-scenario)
-  - [✅ 5. Summary Table](#-5.-summary-table)
+  - [🧪 4. Example Scenario](#-4-example-scenario)
+  - [✅ 5. Summary Table](#-5-summary-table)
   - [🎯 Quiz!](#-quiz)
 <!--/TOC-->
 

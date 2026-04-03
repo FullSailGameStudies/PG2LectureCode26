@@ -5,7 +5,7 @@
   - [🧪 Example: `Student` Class with Fields](#-example-student-class-with-fields)
   - [🔐 Access Control for Fields](#-access-control-for-fields)
   - [🧠 Best Practices](#-best-practices)
-  - [✍️ Naming Conventions for Fields](#-naming-conventions-for-fields)
+  - [✍️ Naming Conventions for Fields](#%EF%B8%8F-naming-conventions-for-fields)
     - [🔤 Common Conventions:](#-common-conventions)
     - [✅ Best Practice Example:](#-best-practice-example)
   - [🎯 Quiz!](#-quiz)

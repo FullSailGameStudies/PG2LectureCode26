@@ -1,14 +1,14 @@
 ﻿# 📘 CSV (Comma-Separated Values) Data Format
 <!--TOC-->
-  - [🧾 Overview](#overview)
+  - [🧾 Overview](#-overview)
   - [📐 Structure](#-structure)
     - [Basic Example](#basic-example)
   - [🧠 Key Concepts](#-key-concepts)
-    - [1. **Delimiters**](#1.-delimiters)
-    - [2. **Quoting**](#2.-quoting)
-    - [3. **Missing Values**](#3.-missing-values)
-  - [🛠️ Use Cases](#-use-cases)
-  - [⚠️ Limitations](#-limitations)
+    - [1. **Delimiters**](#1-delimiters)
+    - [2. **Quoting**](#2-quoting)
+    - [3. **Missing Values**](#3-missing-values)
+  - [🛠️ Use Cases](#%EF%B8%8F-use-cases)
+  - [⚠️ Limitations](#%EF%B8%8F-limitations)
   - [🎯 Quiz!](#-quiz)
 <!--/TOC-->
 ## 🧾 Overview

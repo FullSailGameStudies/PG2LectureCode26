@@ -1,7 +1,6 @@
 ﻿# 📘 Day 08 Lecture Practices
 
-## 💻 Inheritance and Polymorphism
-
+## 💻 Inheritance
 
 ### 🧩 Part B-1.1 Create a BlackjackCard class (Inheritance)
 1. Right-click the Lectures project in the solution explorer and select "Add/Class..."
@@ -9,20 +8,28 @@
 3. Add a `constructor` that takes 2 string parameters used to initialize the suit and face.
      - call the Card's constructor
 
-### 🧩 Part B-1.2 Override (polymorphism)
-1. `override` the Value method. 
-     - It should return an int
-     - use the face to calculate a card value. A = 1, 2 = 2 ... J = 10, Q = 10, K = 10
-
-### 🧩 Part B-1.3 Create a BlackjackCard object
+### 🧩 Part B-1.2 Create a BlackjackCard object
 1. Open the `Day8.cpp`
 2. Find the comment labeled `TODO: Part B-1.2 Create a BlackjackCard object`. After the comment...
 3. Create an instance of your BlackjackCard class. You can use any face and suit.
 
-### 🧩 Part B-1.4  call GameTextures::RenderImage
+### 🧩 Part B-1.3  call GameTextures::RenderImage
 1. Open the `Day8.cpp`
 2. Find the comment labeled `TODO: Part B-1.3  call GameTextures::RenderImage with the BlackjackCard object`. After the comment...
 3. call GameTextures::RenderImage method. pass the face and suit of your card object. Also pass the x, y, and scale variables.
+
+
+## 💻 Polymorphism
+
+### 🧩 Part B-1.4 Override (polymorphism)
+1. `override` the Value method. 
+     - It should return an int
+     - use the face to calculate a card value. A = 1, 2 = 2 ... J = 10, Q = 10, K = 10
+2. Open the `Day8.cpp`
+3. Find the comment labeled `TODO: Part B-1.4 `. After the comment...
+   - call the Print method of the card
+   - call the Value method and print the value
+
 
 #### 🎯 Result
 ![map.erase results](../Lectures/BlackjackCardResults.png)

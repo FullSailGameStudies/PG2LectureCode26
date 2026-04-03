@@ -1,10 +1,10 @@
 ﻿# 📘 Erasing Multiple Items from a `std::vector` in a Loop
 <!--TOC-->
-  - [🔹 The Problem: Iterator Invalidation](#-the-problem-iterator-invalidation)
-  - [🔸 Safe Pattern for Erasing in a Loop](#-safe-pattern-for-erasing-in-a-loop)
+  - [The Problem: Iterator Invalidation](#-the-problem-iterator-invalidation)
+  - [Safe Pattern for Erasing in a Loop](#-safe-pattern-for-erasing-in-a-loop)
     - [✅ Example: Remove All Even Numbers](#-example-remove-all-even-numbers)
     - [🧠 Key Insight:](#-key-insight)
-  - [🔹 Alternative: Reverse Iteration](#-alternative-reverse-iteration)
+  - [Alternative: Reverse Iteration](#-alternative-reverse-iteration)
     - [✅ Why This Works:](#-why-this-works)
   - [🧠 Best Practices](#-best-practices)
   - [🎯 Quiz!](#-quiz)

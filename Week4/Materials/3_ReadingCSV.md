@@ -6,10 +6,10 @@
     - [String Stream Parsing](#string-stream-parsing)
     - [Reading multiple lines](#reading-multiple-lines)
     - [Storing Data in a Vector](#-storing-data-in-a-vector)
-  - [🛠️ Basic Example](#-basic-example)
+  - [🛠️ Basic Example](#%EF%B8%8F-basic-example)
     - [🧱 Required Headers](#-required-headers)
     - [Reading a Simple CSV File](#reading-a-simple-csv-file)
-  - [⚠️ Common Pitfalls](#-common-pitfalls)
+  - [⚠️ Common Pitfalls](#%EF%B8%8F-common-pitfalls)
   - [✅ Best Practices](#-best-practices)
   - [🎯 Quiz!](#-quiz)
 <!--/TOC-->

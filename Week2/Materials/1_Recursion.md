@@ -10,7 +10,7 @@
   - [🧬 Example 2: Fibonacci Sequence](#-example-2-fibonacci-sequence)
     - [C++ Code:](#c-code)
     - [Output:](#output)
-  - [⚠️ Pitfalls of Recursion](#-pitfalls-of-recursion)
+  - [⚠️ Pitfalls of Recursion](#%EF%B8%8F-pitfalls-of-recursion)
     - [Optimization Tip:](#optimization-tip)
   - [🎯 Quiz!](#-quiz)
 <!--/TOC-->

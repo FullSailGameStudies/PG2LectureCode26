@@ -12,8 +12,8 @@
     - [🔹 Syntax](#-syntax)
     - [🧪 Example: Class Instance on the Heap](#-example-class-instance-on-the-heap)
     - [🧠 Why Use Heap Allocation?](#-why-use-heap-allocation)
-    - [⚠️ Best Practices](#-best-practices)
-  - [⚠️ Common Pitfalls](#-common-pitfalls)
+    - [⚠️ Best Practices](#%EF%B8%8F-best-practices)
+  - [⚠️ Common Pitfalls](#%EF%B8%8F-common-pitfalls)
   - [🧭 Summary Table](#-summary-table)
   - [🎯 Quiz!](#-quiz)
 <!--/TOC-->

@@ -10,7 +10,7 @@
     - [🔍 How Constructors Work in Inheritance](#-how-constructors-work-in-inheritance)
     - [🧪 Example: Constructor Call Order](#-example-constructor-call-order)
     - [🧰 Using Initialization Lists in Derived Constructors](#-using-initialization-lists-in-derived-constructors)
-    - [⚠️ Notes](#-notes)
+    - [⚠️ Notes](#%EF%B8%8F-notes)
   - [🧬 Types of Inheritance](#-types-of-inheritance)
   - [🧪 Example: Multilevel Inheritance](#-example-multilevel-inheritance)
   - [✅ Summary](#-summary)

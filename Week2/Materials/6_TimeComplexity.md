@@ -1,8 +1,8 @@
 ﻿# 📘 What Is Time Complexity?
 <!--TOC-->
   - [📦 Why Does It Matter?](#-why-does-it-matter)
-  - [⏱️ Big-O Notation](#-big-o-notation)
-  - [🧪 Example: Linear vs. Quadratic](#-example-linear-vs.-quadratic)
+  - [⏱️ Big-O Notation](#EF%B8%8F-big-o-notation)
+  - [🧪 Example: Linear vs. Quadratic](#-example-linear-vs-quadratic)
   - [🧭 Key Takeaways](#-key-takeaways)
 <!--/TOC-->
 

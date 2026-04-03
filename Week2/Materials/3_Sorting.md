@@ -9,9 +9,9 @@
     - [🧩 Concept](#-concept)
     - [🧠 Key Idea](#-key-idea)
   - [🔍 Step-by-Step Breakdown](#-step-by-step-breakdown)
-  - [⏱️ Time and Space Complexity](#-time-and-space-complexity)
+  - [⏱️ Time and Space Complexity](#%EF%B8%8F-time-and-space-complexity)
   - [✅ Advantages of MergeSort](#-advantages-of-mergesort)
-  - [⚠️ Disadvantages](#-disadvantages)
+  - [⚠️ Disadvantages](#%EF%B8%8F-disadvantages)
   - [🎯 Quiz!](#-quiz)
 <!--/TOC-->
 

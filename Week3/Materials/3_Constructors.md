@@ -9,7 +9,7 @@
     - [🔍 What is a Member Initialization List?](#-what-is-a-member-initialization-list)
     - [✅ Syntax](#-syntax)
     - [🧪 Example with Initialization List](#-example-with-initialization-list)
-    - [⚙️ Why Use Initialization Lists?](#-why-use-initialization-lists)
+    - [⚙️ Why Use Initialization Lists?](#%EF%B8%8F-why-use-initialization-lists)
     - [🧪 Example with `const` and `reference`](#-example-with-const-and-reference)
   - [✅ Summary](#-summary)
   - [🎯 Quiz!](#-quiz)

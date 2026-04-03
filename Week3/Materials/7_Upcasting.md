@@ -3,7 +3,7 @@
   - [🧠 What is Upcasting?](#-what-is-upcasting)
   - [✅ Key Characteristics](#-key-characteristics)
   - [🧪 Why Use Upcasting?](#-why-use-upcasting)
-  - [⚠️ Limitations](#-limitations)
+  - [⚠️ Limitations](#%EF%B8%8F-limitations)
   - [🧭 Summary](#-summary)
 <!--/TOC-->
 ## 🧠 What is Upcasting?
