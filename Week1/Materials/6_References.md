@@ -73,6 +73,23 @@ int main() {
 | Reassignment    | Not allowed       | Allowed             |
 | Dereferencing   | Implicit          | Explicit (`*ptr`)   |
 
+
+---
+
+## Pass-by-Value vs `const&`
+
+| Situation                                        | Best Choice                 |
+|--------------------------------------------------|-----------------------------|
+| Small, trivial type (int, double, enum, pointer) | Pass by value               |
+| Object is cheap to copy                          | Pass by value               |
+| You need a local copy anyway                     | Pass by value               |
+| Function takes ownership / is a “sink”           | Pass by value + `std::move` |
+| Public API (strings, vectors)                    | Often pass by value         |
+| Mutating parameter without affecting caller      | Pass by value               |
+| Large object, read-only, no ownership            | Pass by `const&`            |
+| Performance-critical, avoid copies               | Pass by `const&`            |
+| Function must modify caller’s object             | Pass by non-const reference |
+
 ---
 
 ## 🔹 Use Cases

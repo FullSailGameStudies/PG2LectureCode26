@@ -11,7 +11,7 @@ void Day1::PartA_1_1()
 {
 	//Screen dimension constants
 	const int SCREEN_WIDTH = 750;
-	const int SCREEN_HEIGHT = 75;
+	const int SCREEN_HEIGHT = 750;
 
 	srand(static_cast<unsigned int>(time(NULL)));
 
@@ -34,22 +34,31 @@ void Day1::PartA_1_1()
 		oreTexture.BlendMode(SDL_BLENDMODE_NONE);
 
 		float scale = 0.25f;
-		Player player(&engine, scale, 1, 0);
+		Player player(&engine, scale, 1, 1);
 		if (!player.IsValid())
 		{
 			printf("Failed to load media!\n");
 		}
 		else
 		{
-			Map map(engine.Renderer(), player.Size(), 10, 1);
+			Map map(engine.Renderer(), player.Size());// , 10, 1);
 			map.mapData =
 			{
-				1,0,0,0,0,0,0,0,0,1
+				1,1,1,1,1,1,1,1,1,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,1,1,1,1,1,1,1,1,1
 			};
 
-			Target target{ 7, 0, 0xD9, 0xD6, 0x02 };
+			Target target{ 7, 1, 0xD9, 0xD6, 0x02 };
 
-			player.SetMap(map.mapData, 10, 1);
+			player.SetMap(map.mapData, 10, 10);
 
 			bool quit = false;
 			SDL_Event e;
@@ -90,7 +99,7 @@ void Day1::PartA_1_1()
 void Day1::PartA_1_2()
 {
 	//Screen dimension constants
-	const int SCREEN_WIDTH = 75;
+	const int SCREEN_WIDTH = 750;
 	const int SCREEN_HEIGHT = 750;
 
 	srand(static_cast<unsigned int>(time(NULL)));
@@ -107,7 +116,7 @@ void Day1::PartA_1_2()
 		Console::WriteLine("HINT: explore the Player.h file to see what methods could be used.");
 
 		float scale = 0.25f;
-		Player player(&engine, scale, 0, 1);
+		Player player(&engine, scale, 1, 1);
 		if (!player.IsValid())
 		{
 			printf("Failed to load media!\n");
@@ -120,24 +129,24 @@ void Day1::PartA_1_2()
 				Console::WriteLine("\n\nFAILED to load diamonds.png", ConsoleColor::Red);
 			}
 			oreTexture.BlendMode(SDL_BLENDMODE_NONE);
-			Map map(engine.Renderer(), player.Size(), 1, 10);
+			Map map(engine.Renderer(), player.Size());// , 1, 10);
 			map.mapData =
 			{
-				1,
-				0,
-				0,
-				0,
-				0,
-				0,
-				0,
-				0,
-				0,
-				1
+				1,1,1,1,1,1,1,1,1,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,0,0,0,0,0,0,0,0,1,
+				1,1,1,1,1,1,1,1,1,1
 			};
 
-			Target target{ 0, 5, 0xD9, 0xD6, 0x02 };
+			Target target{ 1, 5, 0xD9, 0xD6, 0x02 };
 
-			player.SetMap(map.mapData, 1, 10);
+			player.SetMap(map.mapData, 10, 10);
 
 			bool quit = false;
 			SDL_Event e;

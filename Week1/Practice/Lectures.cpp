@@ -94,17 +94,17 @@ int main(int argc, char* args[])
 		}
 		case 8:
 		{
-			day2.PartB_1();
+			day2.PartB();
 			break;
 		}
 		case 9:
 		{
-			day2.PartB_2();
+			day2.PartB(2);
 			break;
 		}
 		case 10:
 		{
-			day2.PartB_3();
+			day2.PartB(3);
 			break;
 		}
 		case 11:
