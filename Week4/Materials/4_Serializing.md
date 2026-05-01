@@ -142,6 +142,7 @@ Here are the lecture quizzes...
 ## Weekly Topics
 Here are the topics for the week...
 - [CSV](./1_CSV.md)
+- [File System](./2_FileSystem.md)
 - [Writing CSV](./2_WritingCSV.md)
 - [Reading CSV](./3_ReadingCSV.md)
 - [Serializing](./4_Serializing.md)

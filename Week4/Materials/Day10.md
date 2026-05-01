@@ -27,7 +27,7 @@
 2. Add code to the `SavePosition` method.
 3. Open the file for output.
    - if the file is open, 
-       - the save the word "position" followed by the worldX. make sure to separate them by the delimiter.
+       - print the word "position" followed by the worldX. make sure to separate them by the delimiter.
        - print to the console "SAVED POSITION: " and the worldX.
    - else
        - print the file could not be opened.
