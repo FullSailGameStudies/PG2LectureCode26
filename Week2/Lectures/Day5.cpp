@@ -109,17 +109,9 @@ void Day5::PartB_2(int section)
 	{
 		Grouper grouper;
 
-		std::vector<Light> redLights;
-		redLights.reserve(48 * 48);
-		grouper.MakeRedLights(redLights);
-
 		std::vector<Light> allLights;
 		allLights.reserve(12 * 12);
 		grouper.MakeLights(allLights);
-
-		std::vector<Light> greenLights;
-		greenLights.reserve(51);
-		grouper.MakeGreenLights(greenLights);
 
 
 		std::map<ColorChannel, std::vector<Light>> groupedColors;
